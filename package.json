@@ -1,0 +1,39 @@
+{
+  "name": "Purchase-API",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/resilience": "^3.22.2",
+    "@sap/cds": "^8",
+    "axios": "^1.7.7",
+    "express": "^4",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "CE_PURCHASEORDER_0001": {
+        "kind": "odata",
+        "model": "srv/external/CE_PURCHASEORDER_0001",
+        "credentials": {
+          "url": "https://my409860-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/",
+          "username": "BTP_CLASS_USER",
+          "password": "Bze8GiFnoYiWWjLQdcqGVdMZtiADoVe~BqvPAnMK"
+        }
+      }
+    }
+  },
+  "sapux": [
+    "app/project1"
+  ]
+}
