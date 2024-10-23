@@ -1,25 +1,54 @@
-<PurchaseOrder>
-    <PurchaseOrder>3100000002</PurchaseOrder>
+<PurchaseOrders>
+    <PurchaseOrder>3100000001</PurchaseOrder>
     <PurchaseOrderType>NB</PurchaseOrderType>
     <PurchaseOrderSubtype/>
     <PurchasingDocumentOrigin>9</PurchasingDocumentOrigin>
     <PurchasingDocumentProcessCode/>
     <CreatedByUser>CB9980000017</CreatedByUser>
     <CreationDate>2024-02-20</CreationDate>
-    <PurchaseOrderDate>2024-02-20</PurchaseOrderDate>
-    <LastChangeDateTime>2024-02-21T11:20:57.493038Z</LastChangeDateTime>
-    <Language>EN</Language>
-    <CompanyCode>SSMI</CompanyCode>
-    <PurchasingOrganization>SSMI</PurchasingOrganization>
-    <PurchasingGroup>G69</PurchasingGroup>
-    <Supplier>35010003</Supplier>
-    <DocumentCurrency>INR</DocumentCurrency>
-    <ExchangeRate>1</ExchangeRate>
-    <ExchangeRateIsFixed>false</ExchangeRateIsFixed>
-    <TaxReturnCountry>IN</TaxReturnCountry>
-    <VATRegistrationCountry>IN</VATRegistrationCountry>
-    <PricingDocument>1000000001</PricingDocument>
-    <PricingProcedure>ZDOM</PricingProcedure>
-    <name>niha</name>
-    <amount>151121</amount>
-</PurchaseOrder>
+    <PurchaseOrderItems>
+        <PurchaseOrder>3100000001</PurchaseOrder>
+        <PurchaseOrderItem>10</PurchaseOrderItem>
+        <PurchaseOrderCategory>F</PurchaseOrderCategory>
+        <DocumentCurrency>INR</DocumentCurrency>
+        <PurchasingDocumentDeletionCode/>
+        <MaterialGroup>RM0001</MaterialGroup>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000000</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>60</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>2750</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000000</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>250</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000000</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>910</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurchaseOrderScheduleLine>
+            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <ScheduleLine>1</ScheduleLine>
+            <ScheduleLineDeliveryDate>2024-02-23</ScheduleLineDeliveryDate>
+            <SchedLineStscDeliveryDate>2024-02-23</SchedLineStscDeliveryDate>
+            <PerformancePeriodStartDate/>
+            <PerformancePeriodEndDate/>
+            <ScheduleLineDeliveryTime>00:00:00</ScheduleLineDeliveryTime>
+        </PurchaseOrderScheduleLine>
+    </PurchaseOrderItems>
+</PurchaseOrders>

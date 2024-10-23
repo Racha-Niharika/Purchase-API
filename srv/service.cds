@@ -23,8 +23,8 @@ actions{
     
 
       action label(
-            name: String(80) @Common.Label: 'name',
-            amount: String(80) @Common.Label: 'amount',
+            //name: String(80) @Common.Label: 'name',
+            //amount: String(80) @Common.Label: 'amount',
             Forms: String(80) @Common.Label: 'Forms' @Common.ValueList: {
               CollectionPath: 'Forms', 
               Label: 'Label',
@@ -72,6 +72,7 @@ entity PurOrderItemPricingElement as projection on external.PurOrderItemPricingE
       PurchaseOrderItem,
       PricingDocumentItem,
       PricingProcedureStep,
+      ConditionRateAmount
 }
   }
 annotate ExternalService.Forms with @(UI.LineItem: [

@@ -28,6 +28,7 @@ annotate Product with @(
 //annotate Product with @odata.draft.enabled;
 
 annotate Product with @(
+    UI.SelectionFields: [ PurchaseOrder , PurchaseOrderType, PurchaseOrderType],  
     UI.FieldGroup #GeneratedGroup1 : {
         $Type : 'UI.FieldGroupType',
         Data : [

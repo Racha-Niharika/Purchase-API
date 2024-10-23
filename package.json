@@ -11,6 +11,7 @@
     "@sap/cds": "^8",
     "axios": "^1.7.7",
     "express": "^4",
+    "fs": "^0.0.1-security",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
