@@ -1,47 +1,305 @@
 <PurchaseOrders>
-    <PurchaseOrder>3100000001</PurchaseOrder>
+    <PurchaseOrder>3100000002</PurchaseOrder>
     <PurchaseOrderType>NB</PurchaseOrderType>
     <PurchaseOrderSubtype/>
     <PurchasingDocumentOrigin>9</PurchasingDocumentOrigin>
     <PurchasingDocumentProcessCode/>
     <CreatedByUser>CB9980000017</CreatedByUser>
     <CreationDate>2024-02-20</CreationDate>
+    <PurchaseOrderDate>2024-02-20</PurchaseOrderDate>
+    <_SupplierAddress>
+        <PurchaseOrder>3100000002</PurchaseOrder>
+        <_SupplierAddress>
+            <SupplierAddressID>120</SupplierAddressID>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <AddressID>120</AddressID>
+            <AddressPersonID/>
+            <AddressRepresentationCode/>
+            <CorrespondenceLanguage>EN</CorrespondenceLanguage>
+            <PrfrdCommMediumType/>
+            <AddresseeFullName>A HARILAL &amp; CO PVT.LTD.</AddresseeFullName>
+            <OrganizationName1>A HARILAL &amp; CO PVT.LTD.</OrganizationName1>
+            <OrganizationName2/>
+            <OrganizationName3/>
+            <OrganizationName4/>
+            <AddressSearchTerm1>PLA291</AddressSearchTerm1>
+            <AddressSearchTerm2/>
+            <CityName>MUMBAI</CityName>
+            <DistrictName/>
+            <VillageName/>
+            <PostalCode>400002</PostalCode>
+            <CompanyPostalCode/>
+            <StreetName>169, K.S.Marg, (Lohar Chawl)</StreetName>
+            <StreetPrefixName1/>
+            <StreetPrefixName2/>
+            <StreetSuffixName1/>
+            <StreetSuffixName2/>
+            <HouseNumber/>
+            <HouseNumberSupplementText/>
+            <Building/>
+            <Floor/>
+            <RoomNumber/>
+            <Country>IN</Country>
+            <Region>27</Region>
+            <FormOfAddress/>
+            <TaxJurisdiction/>
+            <TransportZone/>
+            <POBox/>
+            <POBoxIsWithoutNumber>false</POBoxIsWithoutNumber>
+            <POBoxPostalCode/>
+            <POBoxLobbyName/>
+            <POBoxDeviatingCityName/>
+            <POBoxDeviatingRegion/>
+            <POBoxDeviatingCountry/>
+            <CareOfName/>
+            <DeliveryServiceTypeCode/>
+            <DeliveryServiceNumber/>
+            <AddressTimeZone>INDIA</AddressTimeZone>
+            <EmailAddress>samir@aharilal.com</EmailAddress>
+            <RegionalStructureCheckStatus/>
+        </_SupplierAddress>
+    </_SupplierAddress>
     <PurchaseOrderItems>
-        <PurchaseOrder>3100000001</PurchaseOrder>
+        <PurchaseOrder>3100000002</PurchaseOrder>
         <PurchaseOrderItem>10</PurchaseOrderItem>
         <PurchaseOrderCategory>F</PurchaseOrderCategory>
         <DocumentCurrency>INR</DocumentCurrency>
         <PurchasingDocumentDeletionCode/>
         <MaterialGroup>RM0001</MaterialGroup>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000001</PurchaseOrder>
+        <Material>1010301L</Material>
+        <PurchaseOrderItemText>FERRO MOLYBDENUM Moly 60 %</PurchaseOrderItemText>
+        <PurchaseOrderQuantityUnit>KG</PurchaseOrderQuantityUnit>
+        <BaseUnit>KG</BaseUnit>
+        <NetAmount>10000</NetAmount>
+        <GrossAmount>275000</GrossAmount>
+        <OrderQuantity>100</OrderQuantity>
+        <NetPriceAmount>100</NetPriceAmount>
+        <ItemVolume>0</ItemVolume>
+        <ItemGrossWeight>0</ItemGrossWeight>
+        <ItemNetWeight>0</ItemNetWeight>
+        <OrderPriceUnitToOrderUnitNmrtr>1</OrderPriceUnitToOrderUnitNmrtr>
+        <OrdPriceUnitToOrderUnitDnmntr>1</OrdPriceUnitToOrderUnitDnmntr>
+        <GoodsReceiptIsNonValuated>false</GoodsReceiptIsNonValuated>
+        <IsToBeAcceptedAtOrigin>false</IsToBeAcceptedAtOrigin>
+        <TaxCode>G4</TaxCode>
+        <PurOrderItemDeliveryAddress>
+            <PurchaseOrder>3100000002</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000000</PricingDocument>
+            <_DeliveryAddress>
+                <PurchaseOrder>3100000002</PurchaseOrder>
+                <PurchaseOrderItem>10</PurchaseOrderItem>
+                <DeliveryAddressID>22</DeliveryAddressID>
+                <AddressID>22</AddressID>
+                <AddressPersonID/>
+                <AddressRepresentationCode/>
+                <CorrespondenceLanguage>EN</CorrespondenceLanguage>
+                <PrfrdCommMediumType/>
+                <AddresseeFullName>SANYO SPECIAL STEEL SSMI Khopoli</AddresseeFullName>
+                <OrganizationName1>SANYO SPECIAL STEEL</OrganizationName1>
+                <OrganizationName2>SSMI Khopoli</OrganizationName2>
+                <OrganizationName3/>
+                <OrganizationName4/>
+                <AddressSearchTerm1>SSMI</AddressSearchTerm1>
+                <AddressSearchTerm2/>
+                <CityName>Khopoli</CityName>
+                <DistrictName>Raigad,</DistrictName>
+                <VillageName/>
+                <PostalCode>410203</PostalCode>
+                <CompanyPostalCode/>
+                <StreetName>JagdishNagar,</StreetName>
+                <StreetPrefixName1/>
+                <StreetPrefixName2/>
+                <StreetSuffixName1/>
+                <StreetSuffixName2>Tal. Khalapur,</StreetSuffixName2>
+                <HouseNumber/>
+                <HouseNumberSupplementText/>
+                <Building/>
+                <Floor/>
+                <RoomNumber/>
+                <Country>IN</Country>
+                <Region>27</Region>
+                <FormOfAddress>0003</FormOfAddress>
+                <TaxJurisdiction/>
+                <TransportZone/>
+                <POBox/>
+                <POBoxIsWithoutNumber>false</POBoxIsWithoutNumber>
+                <POBoxPostalCode/>
+                <POBoxLobbyName/>
+                <POBoxDeviatingCityName/>
+                <POBoxDeviatingRegion/>
+                <POBoxDeviatingCountry/>
+                <CareOfName/>
+                <DeliveryServiceTypeCode/>
+                <DeliveryServiceNumber/>
+                <AddressTimeZone>INDIA</AddressTimeZone>
+                <EmailAddress/>
+                <RegionalStructureCheckStatus/>
+            </_DeliveryAddress>
+        </PurOrderItemDeliveryAddress>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>60</PricingProcedureStep>
+            <PricingProcedureStep>10</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
             <ConditionRateAmount>2750</ConditionRateAmount>
         </PurOrderItemPricingElement>
         <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrder>3100000002</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000000</PricingDocument>
+            <PricingDocument>1000000001</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>250</PricingProcedureStep>
+            <PricingProcedureStep>20</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
             <ConditionRateAmount>0</ConditionRateAmount>
         </PurOrderItemPricingElement>
         <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrder>3100000002</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000000</PricingDocument>
+            <PricingDocument>1000000001</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>910</PricingProcedureStep>
+            <PricingProcedureStep>20</PricingProcedureStep>
+            <PricingProcedureCounter>2</PricingProcedureCounter>
+            <ConditionRateAmount>-100</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>20</PricingProcedureStep>
+            <PricingProcedureCounter>3</PricingProcedureCounter>
+            <ConditionRateAmount>-5</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>40</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
             <ConditionRateAmount>0</ConditionRateAmount>
         </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>40</PricingProcedureStep>
+            <PricingProcedureCounter>2</PricingProcedureCounter>
+            <ConditionRateAmount>10</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>40</PricingProcedureStep>
+            <PricingProcedureCounter>3</PricingProcedureCounter>
+            <ConditionRateAmount>500</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>50</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>5000</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>50</PricingProcedureStep>
+            <PricingProcedureCounter>2</PricingProcedureCounter>
+            <ConditionRateAmount>1000</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>70</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>1000</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>70</PricingProcedureStep>
+            <PricingProcedureCounter>2</PricingProcedureCounter>
+            <ConditionRateAmount>10</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>70</PricingProcedureStep>
+            <PricingProcedureCounter>3</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>80</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>100</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>2</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>110</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>100</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>120</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>120</PricingProcedureStep>
+            <PricingProcedureCounter>2</PricingProcedureCounter>
+            <ConditionRateAmount>100</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrderItem>10</PurchaseOrderItem>
+            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocumentItem>10</PricingDocumentItem>
+            <PricingProcedureStep>120</PricingProcedureStep>
+            <PricingProcedureCounter>3</PricingProcedureCounter>
+            <ConditionRateAmount>25</ConditionRateAmount>
+        </PurOrderItemPricingElement>
         <PurchaseOrderScheduleLine>
-            <PurchaseOrder>3100000001</PurchaseOrder>
+            <PurchaseOrder>3100000002</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
             <ScheduleLine>1</ScheduleLine>
             <ScheduleLineDeliveryDate>2024-02-23</ScheduleLineDeliveryDate>

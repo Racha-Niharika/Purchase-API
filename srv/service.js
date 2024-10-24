@@ -42,12 +42,12 @@ module.exports = cds.service.impl(async function () {
         }
     });
 
-    // READ operation for Forms (assuming this is static or predefined)
+    
     this.on('READ', Forms, async (req) => {
         const formsData = [
             {  FormName: 'PrePrintedLabel/Default' },
             {  FormName: 'niharika/Default' },
-            {  FormName: 'Form C' }
+            {  FormName: 'sonia/Default' }
         ];
         return formsData; // Return in-memory static data
     });
@@ -68,7 +68,8 @@ module.exports = cds.service.impl(async function () {
                     'PurchasingDocumentOrigin',
                     'PurchasingDocumentProcessCode',
                     'CreatedByUser',
-                    'CreationDate'
+                    'CreationDate',
+                    'PurchaseOrderDate'
                 )
             );
 
@@ -77,7 +78,6 @@ module.exports = cds.service.impl(async function () {
 
             // Loop through each purchase order to fetch corresponding items and related data
             for (let order of purchaseOrders) {
-                // Fetch corresponding Purchase Order Items for each PurchaseOrder
                 const purchaseOrderItems = await productapi.run(
                     SELECT.from('PurchaseOrderItem').where({ PurchaseOrder: order.PurchaseOrder }).columns(
                         'PurchaseOrder',
@@ -85,12 +85,68 @@ module.exports = cds.service.impl(async function () {
                         'PurchaseOrderCategory',
                         'DocumentCurrency',
                         'PurchasingDocumentDeletionCode',
-                        'MaterialGroup'
+                        'MaterialGroup',
+                        'Material',
+                        'PurchaseOrderItemText',
+                        'PurchaseOrderQuantityUnit',
+                        'BaseUnit',
+                        'OrderQuantity',
+                        'NetPriceAmount',
+                        'ItemVolume',
+                        'ItemGrossWeight',
+                        'ItemNetWeight',
+                        'OrderPriceUnitToOrderUnitNmrtr',
+                        'OrdPriceUnitToOrderUnitDnmntr',
+                        'GoodsReceiptIsNonValuated',
+                        'IsToBeAcceptedAtOrigin',
+                        'TaxCode',
+                        'NetAmount',
+                        'GrossAmount'
                     )
                 );
+                
+                // Fetch corresponding Purchase Order Items for each PurchaseOrder
+                const _SupplierAddress = await productapi.run(
+                    SELECT.from('PurchaseOrder')
+                        .where({ PurchaseOrder: order.PurchaseOrder })
+                        .columns(
+                            'PurchaseOrder', // Purchase Order fields
+                            {
+                                ref: ['_SupplierAddress'], // Expanding Supplier Address data
+                                expand: [
+                                    'PurchaseOrderItem',
+                                    'PurchaseOrderCategory',
+                                    'DocumentCurrency',
+                                    'PurchasingDocumentDeletionCode',
+                                    'MaterialGroup',
+                                    'AddresseeFullName',
+                                    'OrganizationName1',
+                                    'OrganizationName2',
+                                    'OrganizationName3',
+                                    'OrganizationName4',
+                                    'AddressSearchTerm1',
+                                    'AddressSearchTerm2',
+                                    'CityName',
+                                    'DistrictName',
+                                    'VillageName',
+                                    'PostalCode',
+                                    'CompanyPostalCode',
+                                    'StreetName',
+                                    'StreetPrefixName1',
+                                    'StreetPrefixName2',
+                                    'StreetSuffixName1',
+                                    'StreetSuffixName2'
+                                ]
+                            }
+                        )
+                );
+                
+                
+                
 
                 // For each PurchaseOrderItem, fetch nested pricing elements and schedule lines
                 for (let item of purchaseOrderItems) {
+
                     // Fetch PurOrderItemPricingElement for each PurchaseOrderItem
                     const pricingElements = await productapi.run(
                         SELECT.from('PurOrderItemPricingElement')
@@ -120,8 +176,52 @@ module.exports = cds.service.impl(async function () {
                             'ScheduleLineDeliveryTime'
                         )
                     );
+                    const PurOrderItemDeliveryAddress = await productapi.run(
+                        SELECT.from('PurchaseOrderItem')
+                        .where({ PurchaseOrderItem: item.PurchaseOrderItem ,PurchaseOrder:item.PurchaseOrder})
+                        .columns(
+                            'PurchaseOrder',
+                            'PurchaseOrderItem',
+                            {
+                                ref: ['_DeliveryAddress'], // Expanding Supplier Address data
+                                expand: [
+                                    'PurchaseOrder',
+    'PurchaseOrderItem',
+    'DeliveryAddressID',
+    'AddressID',
+    'AddresseeFullName',
+    'OrganizationName1',
+    'OrganizationName2',
+    'OrganizationName3',
+    'OrganizationName4',
+    'AddressSearchTerm1',
+    'AddressSearchTerm2',
+    'CityName',
+    'DistrictName',
+    'VillageName',
+    'PostalCode',
+    'CompanyPostalCode',
+    'StreetName',
+    'StreetPrefixName1',
+    'StreetPrefixName2',
+    'StreetSuffixName1',
+    'StreetSuffixName2',
+    'HouseNumber',
+    'HouseNumberSupplementText',
+    'Building',
+    'Floor',
+    'RoomNumber',
+    'Country',
+    'Region',
+    'FormOfAddress'
+                                ]
+                            }
+                        )
+                                            );
+                    
 
                     // Attach nested data to PurchaseOrderItem
+                    item.PurOrderItemDeliveryAddress = PurOrderItemDeliveryAddress;
                     item.PurOrderItemPricingElement = pricingElements;
                     item.PurchaseOrderScheduleLine = scheduleLines;
                 }
@@ -139,6 +239,7 @@ module.exports = cds.service.impl(async function () {
                 // Combine PurchaseOrder and related PurchaseOrderItems, including notes
                 combinedResult.push({
                     ...order, // All fields from PurchaseOrder
+                    _SupplierAddress:_SupplierAddress,
                     PurchaseOrderItems: purchaseOrderItems, // Add the related PurchaseOrderItems with nested PurOrderItemPricingElement and PurchaseOrderScheduleLine
                     PurchaseOrderNotes: purchaseOrderNotes // Add PurchaseOrderNotes
                 });
@@ -192,6 +293,7 @@ const authResponse = await axios.get('https://chembonddev.authentication.us10.ha
             });
             const fileContent = pdfResponse.data.fileContent;
             console.log("File Content:", fileContent);
+            /*
             const filePath = './purchase.xml'; // Specify the file path
 fs.writeFile(filePath, xmlData, (err) => {
     if (err) {
@@ -200,6 +302,7 @@ fs.writeFile(filePath, xmlData, (err) => {
         console.log('XML successfully saved to', filePath);
     }
 });
+*/
             return fileContent; 
                 
         } catch (err) {
