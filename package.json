@@ -33,6 +33,15 @@
           "username": "BTP_CLASS_USER",
           "password": "Bze8GiFnoYiWWjLQdcqGVdMZtiADoVe~BqvPAnMK"
         }
+      },
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_BUSINESS_PARTNER",
+        "credentials": {
+          "url": "https://my409860-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/",
+          "username": "BTP_CLASS_USER",
+          "password": "Bze8GiFnoYiWWjLQdcqGVdMZtiADoVe~BqvPAnMK"
+        }
       }
     }
   },

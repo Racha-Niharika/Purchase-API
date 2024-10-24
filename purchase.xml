@@ -1,17 +1,18 @@
 <PurchaseOrders>
-    <PurchaseOrder>3100000002</PurchaseOrder>
+    <PurchaseOrder>3100000018</PurchaseOrder>
     <PurchaseOrderType>NB</PurchaseOrderType>
     <PurchaseOrderSubtype/>
     <PurchasingDocumentOrigin>9</PurchasingDocumentOrigin>
     <PurchasingDocumentProcessCode/>
     <CreatedByUser>CB9980000017</CreatedByUser>
-    <CreationDate>2024-02-20</CreationDate>
-    <PurchaseOrderDate>2024-02-20</PurchaseOrderDate>
+    <CreationDate>2024-03-01</CreationDate>
+    <PurchaseOrderDate>2024-03-01</PurchaseOrderDate>
+    <Supplier>35010003</Supplier>
     <_SupplierAddress>
-        <PurchaseOrder>3100000002</PurchaseOrder>
+        <PurchaseOrder>3100000018</PurchaseOrder>
         <_SupplierAddress>
             <SupplierAddressID>120</SupplierAddressID>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <AddressID>120</AddressID>
             <AddressPersonID/>
             <AddressRepresentationCode/>
@@ -59,21 +60,33 @@
             <RegionalStructureCheckStatus/>
         </_SupplierAddress>
     </_SupplierAddress>
+    <GSTNO>
+        <Supplier>35010003</Supplier>
+        <SupplierFullName> A HARILAL &amp; CO PVT.LTD./400002 MUMBAI</SupplierFullName>
+        <SupplierName>A HARILAL &amp; CO PVT.LTD.</SupplierName>
+        <VATRegistration/>
+        <TaxNumber3>27AAACA9751D1ZS</TaxNumber3>
+    </GSTNO>
+    <companycode>
+        <Supplier>35010003</Supplier>
+        <CompanyCode>SSMI</CompanyCode>
+        <PaymentTerms>0001</PaymentTerms>
+    </companycode>
     <PurchaseOrderItems>
-        <PurchaseOrder>3100000002</PurchaseOrder>
+        <PurchaseOrder>3100000018</PurchaseOrder>
         <PurchaseOrderItem>10</PurchaseOrderItem>
         <PurchaseOrderCategory>F</PurchaseOrderCategory>
         <DocumentCurrency>INR</DocumentCurrency>
         <PurchasingDocumentDeletionCode/>
-        <MaterialGroup>RM0001</MaterialGroup>
-        <Material>1010301L</Material>
-        <PurchaseOrderItemText>FERRO MOLYBDENUM Moly 60 %</PurchaseOrderItemText>
-        <PurchaseOrderQuantityUnit>KG</PurchaseOrderQuantityUnit>
-        <BaseUnit>KG</BaseUnit>
-        <NetAmount>10000</NetAmount>
-        <GrossAmount>275000</GrossAmount>
-        <OrderQuantity>100</OrderQuantity>
-        <NetPriceAmount>100</NetPriceAmount>
+        <MaterialGroup>L002</MaterialGroup>
+        <Material>1000101L</Material>
+        <PurchaseOrderItemText>SCRAP-M.S.TURNINGS</PurchaseOrderItemText>
+        <PurchaseOrderQuantityUnit>TO</PurchaseOrderQuantityUnit>
+        <BaseUnit>TO</BaseUnit>
+        <NetAmount>19600</NetAmount>
+        <GrossAmount>20000</GrossAmount>
+        <OrderQuantity>20</OrderQuantity>
+        <NetPriceAmount>980</NetPriceAmount>
         <ItemVolume>0</ItemVolume>
         <ItemGrossWeight>0</ItemGrossWeight>
         <ItemNetWeight>0</ItemNetWeight>
@@ -81,12 +94,12 @@
         <OrdPriceUnitToOrderUnitDnmntr>1</OrdPriceUnitToOrderUnitDnmntr>
         <GoodsReceiptIsNonValuated>false</GoodsReceiptIsNonValuated>
         <IsToBeAcceptedAtOrigin>false</IsToBeAcceptedAtOrigin>
-        <TaxCode>G4</TaxCode>
+        <TaxCode>1C</TaxCode>
         <PurOrderItemDeliveryAddress>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
             <_DeliveryAddress>
-                <PurchaseOrder>3100000002</PurchaseOrder>
+                <PurchaseOrder>3100000018</PurchaseOrder>
                 <PurchaseOrderItem>10</PurchaseOrderItem>
                 <DeliveryAddressID>22</DeliveryAddressID>
                 <AddressID>22</AddressID>
@@ -137,176 +150,322 @@
             </_DeliveryAddress>
         </PurOrderItemDeliveryAddress>
         <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocument>1000000056</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
             <PricingProcedureStep>10</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>2750</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>20</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>0</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>20</PricingProcedureStep>
-            <PricingProcedureCounter>2</PricingProcedureCounter>
-            <ConditionRateAmount>-100</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>20</PricingProcedureStep>
-            <PricingProcedureCounter>3</PricingProcedureCounter>
-            <ConditionRateAmount>-5</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>40</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>0</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>40</PricingProcedureStep>
-            <PricingProcedureCounter>2</PricingProcedureCounter>
-            <ConditionRateAmount>10</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>40</PricingProcedureStep>
-            <PricingProcedureCounter>3</PricingProcedureCounter>
-            <ConditionRateAmount>500</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>50</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>5000</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>50</PricingProcedureStep>
-            <PricingProcedureCounter>2</PricingProcedureCounter>
             <ConditionRateAmount>1000</ConditionRateAmount>
         </PurOrderItemPricingElement>
         <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocument>1000000056</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>70</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>1000</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>70</PricingProcedureStep>
-            <PricingProcedureCounter>2</PricingProcedureCounter>
-            <ConditionRateAmount>10</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>70</PricingProcedureStep>
-            <PricingProcedureCounter>3</PricingProcedureCounter>
-            <ConditionRateAmount>0</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>80</PricingProcedureStep>
+            <PricingProcedureStep>20</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
             <ConditionRateAmount>0</ConditionRateAmount>
         </PurOrderItemPricingElement>
         <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
+            <PricingDocument>1000000056</PricingDocument>
             <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>100</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>2</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>110</PricingProcedureStep>
-            <PricingProcedureCounter>1</PricingProcedureCounter>
-            <ConditionRateAmount>100</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>120</PricingProcedureStep>
+            <PricingProcedureStep>70</PricingProcedureStep>
             <PricingProcedureCounter>1</PricingProcedureCounter>
             <ConditionRateAmount>0</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>120</PricingProcedureStep>
-            <PricingProcedureCounter>2</PricingProcedureCounter>
-            <ConditionRateAmount>100</ConditionRateAmount>
-        </PurOrderItemPricingElement>
-        <PurOrderItemPricingElement>
-            <PurchaseOrder>3100000002</PurchaseOrder>
-            <PurchaseOrderItem>10</PurchaseOrderItem>
-            <PricingDocument>1000000001</PricingDocument>
-            <PricingDocumentItem>10</PricingDocumentItem>
-            <PricingProcedureStep>120</PricingProcedureStep>
-            <PricingProcedureCounter>3</PricingProcedureCounter>
-            <ConditionRateAmount>25</ConditionRateAmount>
         </PurOrderItemPricingElement>
         <PurchaseOrderScheduleLine>
-            <PurchaseOrder>3100000002</PurchaseOrder>
+            <PurchaseOrder>3100000018</PurchaseOrder>
             <PurchaseOrderItem>10</PurchaseOrderItem>
             <ScheduleLine>1</ScheduleLine>
-            <ScheduleLineDeliveryDate>2024-02-23</ScheduleLineDeliveryDate>
-            <SchedLineStscDeliveryDate>2024-02-23</SchedLineStscDeliveryDate>
+            <ScheduleLineDeliveryDate>2024-03-06</ScheduleLineDeliveryDate>
+            <SchedLineStscDeliveryDate>2024-03-06</SchedLineStscDeliveryDate>
             <PerformancePeriodStartDate/>
             <PerformancePeriodEndDate/>
             <ScheduleLineDeliveryTime>00:00:00</ScheduleLineDeliveryTime>
         </PurchaseOrderScheduleLine>
     </PurchaseOrderItems>
+    <PurchaseOrderItems>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <PurchaseOrderItem>20</PurchaseOrderItem>
+        <PurchaseOrderCategory>F</PurchaseOrderCategory>
+        <DocumentCurrency>INR</DocumentCurrency>
+        <PurchasingDocumentDeletionCode/>
+        <MaterialGroup>RM0001</MaterialGroup>
+        <Material>1000110L</Material>
+        <PurchaseOrderItemText>SCRAP-SPONGE IRON (DRI)</PurchaseOrderItemText>
+        <PurchaseOrderQuantityUnit>TO</PurchaseOrderQuantityUnit>
+        <BaseUnit>TO</BaseUnit>
+        <NetAmount>9750</NetAmount>
+        <GrossAmount>10000</GrossAmount>
+        <OrderQuantity>10</OrderQuantity>
+        <NetPriceAmount>975</NetPriceAmount>
+        <ItemVolume>0</ItemVolume>
+        <ItemGrossWeight>1</ItemGrossWeight>
+        <ItemNetWeight>1</ItemNetWeight>
+        <OrderPriceUnitToOrderUnitNmrtr>1</OrderPriceUnitToOrderUnitNmrtr>
+        <OrdPriceUnitToOrderUnitDnmntr>1</OrdPriceUnitToOrderUnitDnmntr>
+        <GoodsReceiptIsNonValuated>false</GoodsReceiptIsNonValuated>
+        <IsToBeAcceptedAtOrigin>false</IsToBeAcceptedAtOrigin>
+        <TaxCode>1A</TaxCode>
+        <PurOrderItemDeliveryAddress>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>20</PurchaseOrderItem>
+            <_DeliveryAddress>
+                <PurchaseOrder>3100000018</PurchaseOrder>
+                <PurchaseOrderItem>20</PurchaseOrderItem>
+                <DeliveryAddressID>22</DeliveryAddressID>
+                <AddressID>22</AddressID>
+                <AddressPersonID/>
+                <AddressRepresentationCode/>
+                <CorrespondenceLanguage>EN</CorrespondenceLanguage>
+                <PrfrdCommMediumType/>
+                <AddresseeFullName>SANYO SPECIAL STEEL SSMI Khopoli</AddresseeFullName>
+                <OrganizationName1>SANYO SPECIAL STEEL</OrganizationName1>
+                <OrganizationName2>SSMI Khopoli</OrganizationName2>
+                <OrganizationName3/>
+                <OrganizationName4/>
+                <AddressSearchTerm1>SSMI</AddressSearchTerm1>
+                <AddressSearchTerm2/>
+                <CityName>Khopoli</CityName>
+                <DistrictName>Raigad,</DistrictName>
+                <VillageName/>
+                <PostalCode>410203</PostalCode>
+                <CompanyPostalCode/>
+                <StreetName>JagdishNagar,</StreetName>
+                <StreetPrefixName1/>
+                <StreetPrefixName2/>
+                <StreetSuffixName1/>
+                <StreetSuffixName2>Tal. Khalapur,</StreetSuffixName2>
+                <HouseNumber/>
+                <HouseNumberSupplementText/>
+                <Building/>
+                <Floor/>
+                <RoomNumber/>
+                <Country>IN</Country>
+                <Region>27</Region>
+                <FormOfAddress>0003</FormOfAddress>
+                <TaxJurisdiction/>
+                <TransportZone/>
+                <POBox/>
+                <POBoxIsWithoutNumber>false</POBoxIsWithoutNumber>
+                <POBoxPostalCode/>
+                <POBoxLobbyName/>
+                <POBoxDeviatingCityName/>
+                <POBoxDeviatingRegion/>
+                <POBoxDeviatingCountry/>
+                <CareOfName/>
+                <DeliveryServiceTypeCode/>
+                <DeliveryServiceNumber/>
+                <AddressTimeZone>INDIA</AddressTimeZone>
+                <EmailAddress/>
+                <RegionalStructureCheckStatus/>
+            </_DeliveryAddress>
+        </PurOrderItemDeliveryAddress>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>20</PurchaseOrderItem>
+            <PricingDocument>1000000056</PricingDocument>
+            <PricingDocumentItem>20</PricingDocumentItem>
+            <PricingProcedureStep>10</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>1000</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>20</PurchaseOrderItem>
+            <PricingDocument>1000000056</PricingDocument>
+            <PricingDocumentItem>20</PricingDocumentItem>
+            <PricingProcedureStep>20</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>-250</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>20</PurchaseOrderItem>
+            <PricingDocument>1000000056</PricingDocument>
+            <PricingDocumentItem>20</PricingDocumentItem>
+            <PricingProcedureStep>70</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>500</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurchaseOrderScheduleLine>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>20</PurchaseOrderItem>
+            <ScheduleLine>1</ScheduleLine>
+            <ScheduleLineDeliveryDate>2024-03-31</ScheduleLineDeliveryDate>
+            <SchedLineStscDeliveryDate>2024-03-31</SchedLineStscDeliveryDate>
+            <PerformancePeriodStartDate/>
+            <PerformancePeriodEndDate/>
+            <ScheduleLineDeliveryTime>00:00:00</ScheduleLineDeliveryTime>
+        </PurchaseOrderScheduleLine>
+    </PurchaseOrderItems>
+    <PurchaseOrderItems>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <PurchaseOrderItem>30</PurchaseOrderItem>
+        <PurchaseOrderCategory>F</PurchaseOrderCategory>
+        <DocumentCurrency>INR</DocumentCurrency>
+        <PurchasingDocumentDeletionCode/>
+        <MaterialGroup>RM0001</MaterialGroup>
+        <Material>1000105L</Material>
+        <PurchaseOrderItemText>LADLE SKULL SCRAP</PurchaseOrderItemText>
+        <PurchaseOrderQuantityUnit>TO</PurchaseOrderQuantityUnit>
+        <BaseUnit>TO</BaseUnit>
+        <NetAmount>9500</NetAmount>
+        <GrossAmount>10000</GrossAmount>
+        <OrderQuantity>10</OrderQuantity>
+        <NetPriceAmount>950</NetPriceAmount>
+        <ItemVolume>0</ItemVolume>
+        <ItemGrossWeight>0</ItemGrossWeight>
+        <ItemNetWeight>0</ItemNetWeight>
+        <OrderPriceUnitToOrderUnitNmrtr>1</OrderPriceUnitToOrderUnitNmrtr>
+        <OrdPriceUnitToOrderUnitDnmntr>1</OrdPriceUnitToOrderUnitDnmntr>
+        <GoodsReceiptIsNonValuated>false</GoodsReceiptIsNonValuated>
+        <IsToBeAcceptedAtOrigin>false</IsToBeAcceptedAtOrigin>
+        <TaxCode>1D</TaxCode>
+        <PurOrderItemDeliveryAddress>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>30</PurchaseOrderItem>
+            <_DeliveryAddress>
+                <PurchaseOrder>3100000018</PurchaseOrder>
+                <PurchaseOrderItem>30</PurchaseOrderItem>
+                <DeliveryAddressID>22</DeliveryAddressID>
+                <AddressID>22</AddressID>
+                <AddressPersonID/>
+                <AddressRepresentationCode/>
+                <CorrespondenceLanguage>EN</CorrespondenceLanguage>
+                <PrfrdCommMediumType/>
+                <AddresseeFullName>SANYO SPECIAL STEEL SSMI Khopoli</AddresseeFullName>
+                <OrganizationName1>SANYO SPECIAL STEEL</OrganizationName1>
+                <OrganizationName2>SSMI Khopoli</OrganizationName2>
+                <OrganizationName3/>
+                <OrganizationName4/>
+                <AddressSearchTerm1>SSMI</AddressSearchTerm1>
+                <AddressSearchTerm2/>
+                <CityName>Khopoli</CityName>
+                <DistrictName>Raigad,</DistrictName>
+                <VillageName/>
+                <PostalCode>410203</PostalCode>
+                <CompanyPostalCode/>
+                <StreetName>JagdishNagar,</StreetName>
+                <StreetPrefixName1/>
+                <StreetPrefixName2/>
+                <StreetSuffixName1/>
+                <StreetSuffixName2>Tal. Khalapur,</StreetSuffixName2>
+                <HouseNumber/>
+                <HouseNumberSupplementText/>
+                <Building/>
+                <Floor/>
+                <RoomNumber/>
+                <Country>IN</Country>
+                <Region>27</Region>
+                <FormOfAddress>0003</FormOfAddress>
+                <TaxJurisdiction/>
+                <TransportZone/>
+                <POBox/>
+                <POBoxIsWithoutNumber>false</POBoxIsWithoutNumber>
+                <POBoxPostalCode/>
+                <POBoxLobbyName/>
+                <POBoxDeviatingCityName/>
+                <POBoxDeviatingRegion/>
+                <POBoxDeviatingCountry/>
+                <CareOfName/>
+                <DeliveryServiceTypeCode/>
+                <DeliveryServiceNumber/>
+                <AddressTimeZone>INDIA</AddressTimeZone>
+                <EmailAddress/>
+                <RegionalStructureCheckStatus/>
+            </_DeliveryAddress>
+        </PurOrderItemDeliveryAddress>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>30</PurchaseOrderItem>
+            <PricingDocument>1000000056</PricingDocument>
+            <PricingDocumentItem>30</PricingDocumentItem>
+            <PricingProcedureStep>10</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>1000</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurOrderItemPricingElement>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>30</PurchaseOrderItem>
+            <PricingDocument>1000000056</PricingDocument>
+            <PricingDocumentItem>30</PricingDocumentItem>
+            <PricingProcedureStep>60</PricingProcedureStep>
+            <PricingProcedureCounter>1</PricingProcedureCounter>
+            <ConditionRateAmount>0</ConditionRateAmount>
+        </PurOrderItemPricingElement>
+        <PurchaseOrderScheduleLine>
+            <PurchaseOrder>3100000018</PurchaseOrder>
+            <PurchaseOrderItem>30</PurchaseOrderItem>
+            <ScheduleLine>1</ScheduleLine>
+            <ScheduleLineDeliveryDate>2024-03-31</ScheduleLineDeliveryDate>
+            <SchedLineStscDeliveryDate>2024-03-31</SchedLineStscDeliveryDate>
+            <PerformancePeriodStartDate/>
+            <PerformancePeriodEndDate/>
+            <ScheduleLineDeliveryTime>00:00:00</ScheduleLineDeliveryTime>
+        </PurchaseOrderScheduleLine>
+    </PurchaseOrderItems>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F01</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Header Text</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F02</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Header Note</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F03</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Pricing Types</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F04</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Deadlines</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F05</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Terms of Delivery</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F06</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Shipping Instructions</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F07</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Terms of Payment</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F08</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Warranties</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F09</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Penalty for Breach of Contract</PlainLongText>
+    </PurchaseOrderNotes>
+    <PurchaseOrderNotes>
+        <PurchaseOrder>3100000018</PurchaseOrder>
+        <TextObjectType>F10</TextObjectType>
+        <Language>EN</Language>
+        <PlainLongText>Guarantees</PlainLongText>
+    </PurchaseOrderNotes>
 </PurchaseOrders>

@@ -55,6 +55,9 @@ module.exports = cds.service.impl(async function () {
     // Operation for labeling PurchaseOrders
     this.on('label', 'PurchaseOrder', async (req) => {
         const productapi = await cds.connect.to('CE_PURCHASEORDER_0001');
+        //console.log(productapi);
+        const businessapi = await cds.connect.to('API_BUSINESS_PARTNER');
+        console.log(businessapi);
         //const { PurchaseOrder, Forms,PurchaseOrderItem } = this.entities;
         const { PurchaseOrder } = req.params[0];  
         console.log(PurchaseOrder);
@@ -62,6 +65,7 @@ module.exports = cds.service.impl(async function () {
             // Fetch Purchase Orders with selected fields
             const purchaseOrders = await productapi.run(
                 SELECT.from('PurchaseOrder').where({ PurchaseOrder: PurchaseOrder }).columns(
+                    'Supplier',
                     'PurchaseOrder',
                     'PurchaseOrderType',
                     'PurchaseOrderSubtype',
@@ -140,7 +144,30 @@ module.exports = cds.service.impl(async function () {
                             }
                         )
                 );
-                
+                const GSTNO = await businessapi.run(
+                    SELECT.from('A_Supplier')
+                    .where({
+                        Supplier : order.Supplier
+                    }).columns(
+                        'Supplier',
+                        'SupplierFullName',
+                        'SupplierName',
+                        'VATRegistration',
+                        'TaxNumber3'
+
+                    )
+                )
+                const companycode = await businessapi.run(
+                    SELECT.from('A_SupplierCompany')
+                    .where({
+                        Supplier : order.Supplier
+                    }).columns(
+                        'Supplier',
+                        'CompanyCode',
+                        'PaymentTerms'
+
+                    )
+                )
                 
                 
 
@@ -221,6 +248,7 @@ module.exports = cds.service.impl(async function () {
                     
 
                     // Attach nested data to PurchaseOrderItem
+                    
                     item.PurOrderItemDeliveryAddress = PurOrderItemDeliveryAddress;
                     item.PurOrderItemPricingElement = pricingElements;
                     item.PurchaseOrderScheduleLine = scheduleLines;
@@ -239,7 +267,10 @@ module.exports = cds.service.impl(async function () {
                 // Combine PurchaseOrder and related PurchaseOrderItems, including notes
                 combinedResult.push({
                     ...order, // All fields from PurchaseOrder
+
                     _SupplierAddress:_SupplierAddress,
+                    GSTNO:GSTNO,
+                    companycode:companycode,
                     PurchaseOrderItems: purchaseOrderItems, // Add the related PurchaseOrderItems with nested PurOrderItemPricingElement and PurchaseOrderScheduleLine
                     PurchaseOrderNotes: purchaseOrderNotes // Add PurchaseOrderNotes
                 });
